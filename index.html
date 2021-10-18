@@ -64,7 +64,7 @@
     <link rel="preconnect" href="https://api.ladisales.com/" crossorigin>
     <link rel="preload" href="https://fonts.googleapis.com/css?family=Open Sans:bold,regular|Quicksand:bold,regular|Merriweather:bold,regular|Maven Pro:bold,regular|Trirong:bold,regular|Muli:bold,regular|Tinos:bold,regular|Niramit:bold,regular|Chonburi:bold,regular|Roboto Slab:bold,regular&display=swap"
         as="style" onload="this.onload = null;this.rel = 'stylesheet';">
-    <link rel="preload" href="https://w.ladicdn.com/v2/source/ladipage.vi.min.js?v=1633944637116" as="script">
+    <!-- <link rel="preload" href="https://w.ladicdn.com/v2/source/ladipage.vi.min.js?v=1633944637116" as="script"> -->
     <style id="style_ladi" type="text/css">
     /* custom */
         html {
@@ -1360,6 +1360,9 @@
             position: absolute;
             top: 4px
         }
+        form *::placeholder {
+            opacity: 0.5;
+        }
 
         .ladi-form .ladi-form-item.ladi-form-checkbox.ladi-form-checkbox-horizontal .ladi-form-checkbox-item span {
             padding-left: 18px
@@ -2608,7 +2611,7 @@
             #HEADLINE960 {
                 width: 211px;
                 top: 53.421px;
-                left: 18.692px;
+                left: 27.692px;
             }
             #HEADLINE960>.ladi-headline {
                 font-family: "Open Sans", sans-serif;
@@ -2642,7 +2645,7 @@
             }
             #HEADLINE964 {
                 width: 198px;
-                top: 246.422px;
+                top: 252.422px;
                 left: 508.412px;
             }
             #HEADLINE964>.ladi-headline {
@@ -2676,8 +2679,8 @@
             }
             #HEADLINE968 {
                 width: 203px;
-                top: 259.626px;
-                left: 799.875px;
+                top: 253.626px;
+                left: 812.875px;
             }
             #HEADLINE968>.ladi-headline {
                 font-family: "Open Sans", sans-serif;
@@ -10123,7 +10126,7 @@
                         <div id="FORM_ITEM2026" class='ladi-element'>
                             <div class="ladi-form-item-container">
                                 <div class="ladi-form-item-background"></div>
-                                <div class='ladi-form-item'><input autocomplete="off" tabindex="3" name="entry.1166974658" required class="ladi-form-control" type="tel" placeholder="Số điện thoại" pattern="(\+84|0){1}(9|8|7|5|3){1}[0-9]{8}" value="" /></div>
+                                <div class='ladi-form-item'><input autocomplete="off" tabindex="3" name="entry.1166974658" required class="ladi-form-control" type="tel" placeholder="Số điện thoại" pattern="(\+84|0){1}(9|8|7|5|3){1}[0-9]{8}" title="Số điện thoại không đúng định dạng" value="" /></div>
                             </div>
                         </div>
                         <div id="FORM_ITEM2027" class='ladi-element'>
@@ -11306,30 +11309,33 @@
                         <div id="FORM_ITEM1615" class='ladi-element'>
                             <div class="ladi-form-item-container">
                                 <div class="ladi-form-item-background"></div>
-                                <div class='ladi-form-item'><input autocomplete="off" tabindex="1" name="name" required class="ladi-form-control" type="text" placeholder="Họ và tên" value="" /></div>
+                                <div class='ladi-form-item'><input autocomplete="off" tabindex="1" name="entry.2005620554" required class="ladi-form-control" type="text" placeholder="Họ và tên" value="" /></div>
                             </div>
                         </div>
                         <div id="FORM_ITEM1617" class='ladi-element'>
                             <div class="ladi-form-item-container">
                                 <div class="ladi-form-item-background"></div>
-                                <div class='ladi-form-item'><input autocomplete="off" tabindex="3" name="phone" required class="ladi-form-control" type="tel" placeholder="Số điện thoại" pattern="(\+84|0){1}(9|8|7|5|3){1}[0-9]{8}" value="" /></div>
+                                <div class='ladi-form-item'><input autocomplete="off" tabindex="3" name="entry.1166974658" required class="ladi-form-control" type="tel" placeholder="Số điện thoại" title="Số điện thoại không đúng định dạng"
+                                    pattern="(\+84|0){1}(9|8|7|5|3){1}[0-9]{8}" value="" /></div>
                             </div>
                         </div>
                         <div id="FORM_ITEM1618" class='ladi-element'>
                             <div class="ladi-form-item-container">
                                 <div class="ladi-form-item-background"></div>
-                                <div class='ladi-form-item'><textarea autocomplete="off" tabindex="4" name="message" required class="ladi-form-control" placeholder="Để lại lời nhắn cho chúng tôi"></textarea></div>
+                                <div class='ladi-form-item'><textarea autocomplete="off" tabindex="4" name="entry.839337160" required class="ladi-form-control" placeholder="Để lại lời nhắn cho chúng tôi"></textarea></div>
                             </div>
                         </div><button type="submit" class="ladi-hidden"></button></form>
                 </div>
                 <div id="PARAGRAPH1665" class='ladi-element'>
                     <p class='ladi-paragraph'>Theo dõi chúng tôi ngay&nbsp;</p>
                 </div>
-                <div id="IMAGE1662" class='ladi-element'>
-                    <div class='ladi-image'>
-                        <div class="ladi-image-background"></div>
+                <a href="https://www.facebook.com/bdsnhatnam.info/" target="_blank">
+                    <div id="IMAGE1662" class='ladi-element'>
+                        <div class='ladi-image'>
+                            <div class="ladi-image-background"></div>
+                        </div>
                     </div>
-                </div>
+                </a>
                 <div id="IMAGE1893" class='ladi-element'>
                     <div class='ladi-image'>
                         <div class="ladi-image-background"></div>
@@ -11360,11 +11366,13 @@
                 <div id="SHAPE1988" class='ladi-element'>
                     <div class='ladi-shape'><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" height="100%" viewBox="0 0 24 24" fill="rgba(255,255,255,1)"> <path d="M10,20V14H14V20H19V12H22L12,3L2,12H5V20H10Z"></path> </svg></div>
                 </div>
-                <div id="IMAGE1663" class='ladi-element'>
-                    <div class='ladi-image'>
-                        <div class="ladi-image-background"></div>
-                    </div>
-                </div>
+                    <a href="https://www.youtube.com/watch?v=FKIUQWnPwyA" target="_blank">
+                        <div id="IMAGE1663" class='ladi-element'>
+                            <div class='ladi-image'>
+                                <div class="ladi-image-background"></div>
+                            </div>
+                        </div>
+                    </a>
             </div>
         </div>
         <div id="SECTION_POPUP" class='ladi-section'>
@@ -11374,6 +11382,56 @@
     </div>
     <div id="backdrop-popup" class="backdrop-popup"></div>
     <div id="lightbox-screen" class="lightbox-screen"></div>
+    <div class="tu-van2" >
+        <div class="nen" style="position: relative;">
+            <a style="position: absolute; top: 100px; top: -96px; width: 166%; left: -18px;" class="hotline-nhatnam" href="tel:0945867788"><img style="width: 100px; " class="hotline" src="./img/dien-thoai.gif"></a>
+			<a class="zalo" href="https://zalo.me/4392818535468992019"><img style="margin-bottom: 5%;" class="iconzalo" src="./img/iconzalo.gif"></a>
+            <a class="messge" href="https://www.messenger.com/t/bdsnhatnam.info" target="_blank"><img class="iconzalo" src="./img/mess.png"></a>
+            <a class="popup-regis" href="https://tawk.to/chat/60766150f7ce1827093a2a98/1f376o977?$_tawk_sk=6093b14eeb6b714e1b54c8a1&$_tawk_tk=2d76f1794ff63b894383df17b1803348&v=698" style="cursor: pointer;"><img src="./img/chat-1.png"></a>
+			<div class="section-title" style="padding-bottom: 40px;">
+        </div>
+	</div>
+    <style>
+      .tu-van2 {
+    position: fixed;
+    bottom: 15px;
+    right: 15px;
+    z-index: 9
+}
+
+.tu-van2 .nen {
+    display: inline-block
+}
+
+@media screen and (max-width: 991px) {
+    .tu-van2 {
+        right:20px
+    }
+}
+
+.tu-van2 a {
+    display: block;
+    margin-bottom: 10px
+}
+
+@media screen and (max-width: 991px) {
+    .tu-van2 a {
+        margin-bottom:0
+    }
+}
+
+.tu-van2 img {
+    width: 65px
+}
+
+@media screen and (max-width: 991px) {
+    .tu-van2 img {
+        width:55px
+    }
+}
+    </style>
+
+</div>
     <script id="script_lazyload" type="text/javascript">
         (function() {
             var style_lazyload = document.getElementById('style_lazyload');

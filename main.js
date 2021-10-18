@@ -1044,7 +1044,7 @@ var LadiPageScriptV2 = LadiPageScriptV2 || function () { };
                                 e.runtime.isClient)
                         ) {
                             var t = document.createElement("a");
-                            t.setAttribute("href", "https://www.ladiboost.vn/?by=ladipage"),
+                            t.setAttribute("href", ""),
                                 t.setAttribute("target", "_blank"),
                                 t.setAttribute("rel", "nofollow"),
                                 document.body.insertBefore(
@@ -3523,8 +3523,8 @@ var LadiPageScriptV2 = LadiPageScriptV2 || function () { };
                         }).finally(() => {
                             let alert = document.createElement('div');
                             alert.className = "ladipage-message";
-                            alert.innerHTML = `<div class="ladipage-message-box"><span>Alert</span>
-                                                <div class="ladipage-message-text">Cảm ơn bạn đã quan tâm</div>
+                            alert.innerHTML = `<div class="ladipage-message-box"><span>Thông báo</span>
+                                                <div class="ladipage-message-text">Chúc mừng bạn đã đăng ký thành công</div>
                                                 <button class="ladipage-message-close" onclick="this.parentElement.parentElement.remove();">OK</button></div >`
                             document.body.append(alert)
               });
